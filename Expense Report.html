@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Reports</title>
+    <div class="menu">
+        <nav>
+            <img src="logo.jpeg" alt="Logo" height="80" width="80">
+            <a href="cashbooks.html" class="nav-items">Cashbooks </a>
+            <a href="expenses1.html" class="nav-items">Expenses</a>
+            <a href="report.html" class="nav-items">Expense Report</a>
+            <a href="about.html" class="nav-items">About Us</a>
+            <a href="logout.html" class="nav-items">Login/Register </a>
+            <div class="profile-link">
+                <a href="profile.html"><img src="profile.jpeg" alt="Icon" height="80" width="80"></a>
+            </div>
+        </nav>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div class="wrapper">
+        <header>
+            <h1>Expense Reports</h1>
+        </header><br>
+    </div>
+
+    <div id="sel">
+
+        <span id="bn">
+            Book Name:</span>
+        <select id="reportType1">
+            <option value="Travel Expenditure">Travel Expenditure</option>
+            <option value="Food Expenditure">Food Expenditure</option>
+            <option value="Rent">Rent</option>
+            <option value="Provisions">Provisions</option>
+            <option value="Miscellaneous">Miscellaneous</option>
+        </select>
+
+
+
+
+        <span id="rpttyp"> Select Report Type:</span>
+
+        <select id="reportType">
+            <option value="weekly">Weekly</option>
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+        </select>
+
+
+    </div>
+    <br><br>
+
+    <div id="btn">
+        <button id="generateReport">Generate Report</button> <br> <br>
+        <button id="downloadReport">Download Report</button>
+
+
+    </div>
+</body>
+
+
+<br>
+<!-- <div class="text">
+    <span>R</span>
+    <span>E</span>
+    <span>P</span>
+    <span>O</span>
+    <span>R</span>
+    <span>T</span>
+    <span>V</span>
+    <span>I</span>
+    <span>E</span>
+    <span>W</span>
+</div> -->
+<br><br>
+<br>
+
+
+<div id="border" style="text-align: center; margin: 0 auto;">
+    <div id="chartContainer" style="display: inline-block; text-align: center;">
+
+        <span style="margin-right: 50px;">
+            <button id="barGraphBtn" style="display: block; margin: 0px 0px 0px -105px; text-align: left;">Bar
+                Graph</button>
+        </span>
+        <canvas id="barChart" width="300" height="300"
+            style="display: block; margin: 10px; text-align: left; padding: left"></canvas>
+        <br><br>
+        <span style="margin-right: 50px;">
+            <button id="pieChartBtn"
+                style="display: block;margin: 0px 0px 0px -105px; text-align: left; padding: auto;;">Pie
+                Chart</button>
+        </span><br>
+        <canvas id="pieChart" width="300" height="300" style="display: block; margin: 10px; text-align: left;"></canvas>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>

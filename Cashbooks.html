@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashbooks</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="Cashbooks.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+    <main>
+        <div class="watermark">
+            <marquee behavior="alternate" direction="right">Manage your expenditure using Budget Buddy!</marquee>
+        </div>
+        <div class="menu">
+            <nav>
+                <img src="logo.jpeg" alt="Logo" height="80" width="80">
+                <a href="cashbooks.html" class="nav-items">Cashbooks </a>
+                <a href="expenses1.html" class="nav-items">Expenses</a>
+                <a href="Expense Report.html" class="nav-items">Expense Report</a>
+                <a href="about.html" class="nav-items">About Us</a>
+                <a href="logout.html" class="nav-items">Login/Register </a>
+                <div class="profile-link">
+                    <a href="profile.html"><img src="profile.jpeg" alt="Icon" height="80" width="80"></a>
+                </div>
+            </nav>
+        </div>
+        <div id="search-input">
+            <!-- <label for="searchInput">Search Cashbook 🔎:</label> -->
+            Search Cashbook :
+            <input type="search" placeholder="Type to search..." list="search-options">
+            <button id="searchButton">Search</button>
+            <datalist id="search-options">
+                <option value="Travel Expenditure">
+                <option value="Food Expenditure">
+                <option value="Rent">
+                <option value="Provisions"></option>
+                <option value="Miscellaneous"></option>
+            </datalist>
+        </div><br><br>
+
+
+
+        <div id="btn">
+            <a href="expenses1.html#transactionFormDiv">
+                <button id="addBookBtn">Add New Book</button>
+            </a>
+            <button id="deleteBookBtn">Delete Book</button></a>
+            <a href="expenses1.html#myTable1">
+                <button id="modifyBookBtn">Modify Book</button></a>
+            <button id="mergeBtn">Merge</button>
+        </div>
+
+        <h2>Cashbook Details</h2>
+        <a href="expenses1.html#myTable1">
+            <table id="table" border="3">
+                <tr>
+                    <th>S.No</th>
+                    <th>Cash books</th>
+                    <th>Last updated</th>
+                    <th>Paid By</th>
+                    <th>Mode of Payment</th>
+                    <th>Select</th>
+
+                </tr>
+
+                <tr>
+                    <th>1</th>
+                    <td>Travel Expenditure</td>
+                    <td>January 15, 2024</td>
+                    <td>Yeshwanth</td>
+                    <td>Credit Card</td>
+                    <td>
+                        <input type="checkbox" id="_checkbox1">
+                        <label for="_checkbox1" id="_checkbox1_label">
+                            <div id="tick_mark"></div>
+                        </label>
+                        📂
+                    </td>
+
+
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Food Expenditure</td>
+                    <td>January 03, 2024</td>
+                    <td>Korean company</td>
+                    <td>Cash</td>
+                    <td>
+                        <input type="checkbox" id="_checkbox2">
+                        <label for="_checkbox2" id="_checkbox2_label">
+                            <div id="tick_mark"></div>
+                        </label>
+                        📂
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Rent</td>
+                    <td>January 06, 2024</td>
+                    <td>Nihal</td>
+                    <td>Bank Transfer</td>
+                    <td>
+                        <input type="checkbox" id="_checkbox3">
+                        <label for="_checkbox3" id="_checkbox3_label">
+                            <div id="tick_mark"></div>
+                        </label>
+                        📂
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>Provisions</td>
+                    <td>January 11, 2024</td>
+                    <td>Ragul</td>
+                    <td>Credit Card</td>
+                    <td>
+                        <input type="checkbox" id="_checkbox4">
+                        <label for="_checkbox4" id="_checkbox4_label">
+                            <div id="tick_mark"></div>
+                        </label>
+                        📂
+                    </td>
+
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>Miscellaneous</td>
+                    <td>January 13, 2024</td>
+                    <td>Akshaj</td>
+                    <td>UPI</td>
+                    <td>
+                        <input type="checkbox" id="_checkbox5">
+                        <label for="_checkbox5" id="_checkbox5_label">
+                            <div id="tick_mark"></div>
+                        </label>
+                        📂
+                    </td>
+
+                </tr>
+
+            </table>
+        </a>
+
+
+
+
+
+        <footer>
+            <p>&copy; 2024 Budget Buddy. All Rights Reserved.</p>
+        </footer>
+
+    </main>
+</body>
+
+</html>

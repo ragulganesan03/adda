@@ -1,0 +1,332 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffdfdf;
+}
+
+.watermark {
+  position: relative;
+  background-color: #aedefc;
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Protest+Riot&display=swap");
+.profile-link {
+  margin-left: auto;
+  margin-right: 20px;
+}
+.nav-items {
+  border-radius: 200px;
+  height: 40px;
+  background-color: #ffdfdf;
+  color: black;
+  border: none;
+  padding: 5px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* font-family: 'Averia Serif Libre', serif; */
+  font-family: "Noto Sans", sans-serif;
+}
+
+.nav-items:last-child {
+  margin-right: 0;
+}
+.nav-items:hover {
+  background-color: #ffb5b5;
+}
+nav {
+  position: relative;
+  top: 0%;
+  right: 10px;
+  width: 103%;
+  background-color: #f875aa;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 1000;
+  padding: 10px;
+}
+
+nav img,
+nav .nav-items {
+  vertical-align: middle;
+  margin: 8px;
+}
+
+/* nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #acbcff;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: rgba(255, 255, 255, 1);
+} */
+
+header {
+  /* background-color: #aedefc; */
+  padding: 30px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #dddddd;
+  text-align: center;
+  color: #000;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.5s ease;
+}
+
+Line Chart {
+  background: #aedefc;
+  display: inline-block;
+  border: none;
+  z-index: 1;
+  position: relative;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+Line Chart:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+Line Chart:hover {
+  color: #fff;
+}
+
+Line Chart:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Rocher";
+  text-align: center;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #dddddd;
+  color: #000;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.5s ease;
+}
+
+#generateReport,
+#downloadReport,
+#LineChart,
+#barGraphBtn,
+#pieChartBtn {
+  background: #aedefc;
+  display: inline-block;
+  border: none;
+  z-index: 1;
+  position: relative;
+  text-align: justify;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#generateReport:after,
+#downloadReport:after,
+#LineChart:after,
+#barGraphBtn:after,
+#pieChartBtn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#generateReport:hover,
+#downloadReport:hover,
+#LineChart:hover,
+#barGraphBtn:hover,
+#pieChartBtn:hover {
+  color: #fff;
+}
+
+#generateReport:hover:after,
+#downloadReport:hover:after,
+#LineChart:hover:after,
+#barGraphBtn:hover:after,
+#pieChartBtn:hover:after {
+  left: 0;
+  width: 100%;
+}
+.wrapper {
+  text-align: center;
+  h1 {
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Josefin Sans", sans-serif;
+    background: linear-gradient(
+      to right,
+      #095fab 10%,
+      #25abe8 50%,
+      #f875aa 60%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 120% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* .text {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+  transform: translateY(-50%);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: rotateX(35deg), translateY(-50%);
+    span {
+      color: #000000;
+      &:nth-child(odd) {
+        transform: skewY(15deg);
+      }
+      &:nth-child(even) {
+        transform: skewY(-15deg);
+        background-color: #acbcff;
+        color: #a6a6a6;
+      }
+    }
+  }
+
+  > span {
+    display: block;
+    background-color: #fff;
+    width: 90px;
+    height: 57px;
+    line-height: 66px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+    box-shadow: 0 40px 50px rgba(0, 0, 0, 0.1);
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+  }
+} */
+
+#sel {
+  position: relative;
+  display: inline-flex;
+  margin: 10px;
+  text-align: right;
+}
+
+#rpttyp {
+  position: relative;
+  left: 35vh;
+}
+
+#reportType {
+  height: 20px;
+  margin-left: 300px;
+  padding: 1px;
+}
+#bn {
+  margin-left: 250px;
+}
+#reportType1 {
+  height: 20px;
+  margin-left: 30px;
+  padding: 1px;
+}
+
+#btn {
+  position: relative;
+  margin: 25px;
+  padding-left: -30px;
+  text-align: -webkit-center;
+  height: 30px;
+}
+
+#border {
+  text-align: center;
+}
+
+#chartContainer {
+  display: inline-block;
+}
